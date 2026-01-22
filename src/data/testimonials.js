@@ -1,0 +1,63 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Sneha Sharma',
+    role: 'Computer Science Student',
+    university: 'Tribhuvan University',
+    content: 'ProjectHub helped me understand complex algorithms through well-documented code. The quality exceeded my expectations and I learned so much from their implementation!',
+    rating: 5,
+    avatar: null,
+  },
+  {
+    id: 2,
+    name: 'Rajesh Adhikari',
+    role: 'Software Engineering Student',
+    university: 'Kathmandu University',
+    content: 'Fast delivery and professional work. The documentation was thorough and helped me learn while meeting my tight deadline. Highly recommended!',
+    rating: 5,
+    avatar: null,
+  },
+  {
+    id: 3,
+    name: 'Neha Gurung',
+    role: 'Data Science Student',
+    university: 'Pokhara University',
+    content: 'Excellent service! They delivered a clean, well-structured project that I could easily understand and build upon. The code quality was impressive.',
+    rating: 5,
+    avatar: null,
+  },
+  {
+    id: 4,
+    name: 'Arjun Thapa',
+    role: 'Web Development Student',
+    university: 'Nepal College of IT',
+    content: 'The React project they built was exactly what I needed. Clean code, great documentation, and they even added helpful comments throughout.',
+    rating: 5,
+    avatar: null,
+  },
+  {
+    id: 5,
+    name: 'Divya Poudel',
+    role: 'Information Systems Student',
+    university: 'Asian University for Women',
+    content: 'Their technical documentation service saved my thesis. Professional, well-researched, and delivered ahead of schedule. Will definitely use again!',
+    rating: 5,
+    avatar: null,
+  },
+  {
+    id: 6,
+    name: 'Suresh Lamichhane',
+    role: 'Computer Engineering Student',
+    university: 'Purbanchal University',
+    content: 'I was struggling with my database project. ProjectHub not only completed it but explained the concepts so I could ace my exam. Amazing support!',
+    rating: 5,
+    avatar: null,
+  },
+];
+
+export const stats = [
+  { value: '1000+', label: 'Students Served' },
+  { value: '2500+', label: 'Projects Completed' },
+  { value: '96%', label: 'Satisfaction Rate' },
+  { value: '4.9/5', label: 'Average Rating' },
+];
