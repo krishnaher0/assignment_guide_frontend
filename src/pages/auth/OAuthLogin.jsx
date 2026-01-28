@@ -173,7 +173,7 @@ export default function AuthLogin() {
       <div className="w-full max-w-4xl">
         {/* MFA Step */}
         {mfaStep ? (
-          <div className="max-w-md mx-auto">
+          <div className="max-w-lg mx-auto">
             <div className="text-center mb-8">
               <Link to="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-blue-400 text-sm transition-colors mb-6">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

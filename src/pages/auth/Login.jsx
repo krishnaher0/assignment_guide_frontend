@@ -97,7 +97,7 @@ export default function Login() {
 
       {mfaStep ? (
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans">
-          <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="sm:mx-auto sm:w-full sm:max-w-lg">
             <Link to="/" className="flex items-center justify-center gap-2 mb-8">
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">&lt;/&gt;</span>
@@ -114,7 +114,7 @@ export default function Login() {
             </p>
           </div>
 
-          <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-lg">
             <div className="bg-white py-8 px-4 shadow-sm rounded-xl sm:px-10 border border-gray-100">
               {error && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-600 rounded-lg text-sm">
