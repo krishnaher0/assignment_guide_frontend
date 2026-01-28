@@ -40,7 +40,18 @@ const Avatar = ({
     };
 
     const sizeClass = sizeClasses[size] || sizeClasses.md;
-    const showImage = src && !imageError;
+
+    // Handle local paths for images
+    const getImageUrl = (url) => {
+        if (!url) return null;
+        if (url.startsWith('http')) return url;
+        // Prepend backend base URL (assuming port 5001 as per other files)
+        const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
+        return `${baseUrl}${url}`;
+    };
+
+    const finalSrc = getImageUrl(src);
+    const showImage = finalSrc && !imageError;
 
     return (
         <div className={`relative ${sizeClass} ${className}`}>
@@ -54,11 +65,10 @@ const Avatar = ({
             {/* Profile image (overlays initials when loaded) */}
             {showImage && (
                 <img
-                    src={src}
+                    src={finalSrc}
                     alt={name || email || 'User'}
-                    className={`absolute inset-0 w-full h-full rounded-xl object-cover transition-opacity duration-200 ${
-                        imageLoaded ? 'opacity-100' : 'opacity-0'
-                    }`}
+                    className={`absolute inset-0 w-full h-full rounded-xl object-cover transition-opacity duration-200 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                        }`}
                     onLoad={() => setImageLoaded(true)}
                     onError={() => setImageError(true)}
                     referrerPolicy="no-referrer"
