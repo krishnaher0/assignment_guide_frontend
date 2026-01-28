@@ -14,7 +14,9 @@ import {
     HiOutlinePlus,
     HiOutlineDocumentText,
     HiOutlineClipboardCheck,
-    HiOutlineReceiptTax
+    HiOutlineReceiptTax,
+    HiOutlineShieldCheck,
+    HiOutlineUser
 } from 'react-icons/hi';
 import { FaCode } from 'react-icons/fa';
 
@@ -25,6 +27,7 @@ const sidebarItems = [
     { path: '/dashboard/client/contracts', label: 'Contracts', icon: HiOutlineClipboardCheck },
     { path: '/dashboard/client/invoices', label: 'Invoices', icon: HiOutlineReceiptTax },
     { path: '/dashboard/client/payment', label: 'Payments', icon: HiOutlineCreditCard },
+    { path: '/dashboard/client/profile', label: 'Profile', icon: HiOutlineUser },
 ];
 
 function ClientLayoutContent() {
@@ -55,9 +58,8 @@ function ClientLayoutContent() {
             )}
 
             {/* Sidebar */}
-            <aside className={`fixed top-0 left-0 z-50 h-full w-64 bg-[#0a0a0f] border-r border-zinc-800/50 transform transition-transform duration-300 md:translate-x-0 ${
-                mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-            }`}>
+            <aside className={`fixed top-0 left-0 z-50 h-full w-64 bg-[#0a0a0f] border-r border-zinc-800/50 transform transition-transform duration-300 md:translate-x-0 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+                }`}>
                 <div className="flex flex-col h-full">
                     {/* Logo */}
                     <div className="h-16 flex items-center justify-between px-6 border-b border-zinc-800/50">
@@ -89,11 +91,10 @@ function ClientLayoutContent() {
                                     key={item.path}
                                     to={item.path}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                                        isActive
-                                            ? 'bg-gradient-to-r from-blue-600/20 to-blue-600/10 text-white border border-blue-500/20'
-                                            : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'
-                                    }`}
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${isActive
+                                        ? 'bg-gradient-to-r from-blue-600/20 to-blue-600/10 text-white border border-blue-500/20'
+                                        : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'
+                                        }`}
                                 >
                                     <Icon className="w-5 h-5" />
                                     {item.label}

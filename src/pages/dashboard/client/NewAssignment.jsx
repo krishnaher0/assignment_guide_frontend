@@ -236,7 +236,7 @@ export default function NewAssignment() {
               View My Assignments
             </button>
             <a
-              href={`https://wa.me/9779866291003?text=Hi! I just submitted an assignment with Order ID: ${orderId}`}
+              href={`https://wa.me/9779861544600?text=Hi! I just submitted an assignment with Order ID: ${orderId}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 px-6 py-3 bg-green-500/20 text-green-400 rounded-xl font-medium hover:bg-green-500/30 transition-colors border border-green-500/30 flex items-center justify-center gap-2"
@@ -550,7 +550,7 @@ export default function NewAssignment() {
             {loading ? "Submitting..." : "Submit Assignment"}
           </button>
           <a
-            href="https://wa.me/9779866291003"
+            href="https://wa.me/9779861544600"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 py-4 bg-green-500/20 text-green-400 rounded-xl font-semibold text-lg hover:bg-green-500/30 transition-colors border border-green-500/30 text-center flex items-center justify-center gap-2"
